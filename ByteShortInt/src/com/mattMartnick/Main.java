@@ -13,9 +13,14 @@ public class Main {
 
         // byte has a width of 8
         byte myMaxByteValue = 127;
+        byte myNewByteValue = (byte) (myMaxByteValue/2);
+        System.out.println("myNewByteValue = " + myNewByteValue);
 
         // short has a width of 16
         short myMaxShortValue = 32767;
+        short myNewShortValue = (short) (myMaxShortValue/2);
+        System.out.println("myNewShortValue = " + myNewShortValue);
+
 
         // long has a width of 64
         long myMaxLongValue = 9_223_372_036_854_807L;
