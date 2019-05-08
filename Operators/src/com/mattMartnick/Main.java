@@ -70,9 +70,33 @@ public class Main {
         if (isAlien == false)
             System.out.println("It is not an alien");
 
-        int topScore = 100;
-        if (topScore == 100)
+        int topScore = 80;
+        if (topScore < 100)
             System.out.println("You got the high score!");
+
+        // && Operator designates that both conditions need to be true/false to run successfully
+        int secondTopScore = 81;
+        if ((topScore > secondTopScore) && (topScore < 100))
+            System.out.println("Greater than second top score and less than 100");
+
+        // Or
+        if ((topScore > 90) || (secondTopScore <= 90))
+            System.out.println("One of these tests is true");
+
+        int newValue = 50;
+        if(newValue == 40)
+            System.out.println("This is true");
+        else
+            System.out.println("This is an error");
+
+        boolean isCar = false;
+        if(isCar == true)
+            System.out.println("This is not supposed to happen");
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if(wasCar)
+            System.out.println("wasCar is true");
 
 
     }
